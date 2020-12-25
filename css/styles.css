@@ -1,0 +1,51 @@
+/************************************Tag Selection**************************************/
+body{
+    background: no-repeat right 0 top 688px url("../assets/desktop/bg-pattern-dots.svg"),
+                no-repeat right 0 top 100px url("../assets/desktop/image-host.jpg"),
+                #111725;
+    color:blanchedalmond;
+
+    min-height: 103vh;
+}
+h1{
+    font-size: 3.5em;
+    font-family: 'Andika New Basic', sans-serif;
+    font-weight: 400;
+    line-height: 120%;
+}
+p{
+    width: 55%;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 150%;
+}
+/***********************************Class Selection*************************************/
+.main-container{
+    margin-top: 70px;
+    margin-left: 150px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    height: 670px;
+    width: 50%;
+}
+.content-container{
+    background-color: #111725;
+
+    padding-top: 80px;
+    padding-right: 70px;
+}
+.email-input{
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+.podcasts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+}

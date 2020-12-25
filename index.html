@@ -1,19 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Pod request access landing page</title>
-</head>
-<body>
-  Publish your podcasts everywhere.
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-  Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
-  Apple Podcasts, Google Podcasts, Pocket Casts and more!
+    <title>Frontend Mentor | Pod request access landing page</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="logo-container">
+        <img src="./assets/desktop/logo.svg" alt="logo image" />
+      </div>
 
-  Request access
-</body>
+      <div class="content-container">
+        <div class="discription">
+          <h1>
+            PUBLISH YOUR PODCASTS <br />
+            <span>EVERYWHERE.</span>
+          </h1>
+          <p>
+            Upload your audio to Pod with a single click. We’ll then distribute
+            your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket
+            Casts and more!
+          </p>
+        </div>
+
+        <div class="email-input">
+          <input type="email" />
+          <button>Request access</button>
+        </div>
+
+        <div class="podcasts">
+          <img
+            src="./assets/desktop/spotify.svg"
+            alt="spotify loge"
+            width="96"
+            height="29"
+          />
+          <img
+            src="./assets/desktop/apple-podcast.svg"
+            alt="apple-podcast logo"
+            width="78"
+            height="29"
+          />
+          <img
+            src="./assets/desktop/google-podcasts.svg"
+            alt="google-podcasts logo"
+            width="125"
+            height="18"
+          />
+          <img
+            src="./assets/desktop/pocket-casts.svg"
+            alt="pocket-casts logo"
+            width="129"
+            height="26"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
