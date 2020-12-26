@@ -5,24 +5,24 @@ body{
                 #111725;
     color:blanchedalmond;
 
-    min-height: 103vh;
+    min-height: 130vh;
 }
 h1{
-    font-size: 3.5em;
+    font-size: 2.5em;
     font-family: 'Andika New Basic', sans-serif;
     font-weight: 400;
     line-height: 120%;
 }
 p{
-    width: 55%;
-    font-size: 20px;
+    width: 75%;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
     line-height: 150%;
 }
 /***********************************Class Selection*************************************/
 .main-container{
     margin-top: 70px;
-    margin-left: 150px;
+    margin-left: 6%;
 
     display: flex;
     flex-direction: column;
@@ -42,10 +42,46 @@ p{
     margin-top: 32px;
     margin-bottom: 48px;
 }
+.c-form {
+    box-sizing: border-box;
+    display: flex;
+    justify-content:space-between;
+
+    background-color: #2c344b;
+    border-radius: 1.5em;
+
+    padding-left: 1.5em;
+
+    width: 75%;
+}
+.c-form__input {
+    background-color: #2c344b;
+    border-width: 0;
+    border-style: none;
+
+    width: 60%;
+
+    color: blanchedalmond;
+}
+
+.c-form__button {
+    color: #111725;
+    padding: 0 1.5em;
+    height: 3em;
+    background-color: #54e6af;
+
+    border-radius: 1.5em;
+    border-width: 0;
+    border-style: none;
+}
 .podcasts{
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    width: 80%;
+    width: 90%;
+}
+/***********************************Id Selection*************************************/
+#email{
+    background-color: #2c344b;
 }
