@@ -3,7 +3,7 @@ body{
     background: no-repeat right 0 top 688px url("../assets/desktop/bg-pattern-dots.svg"),
                 no-repeat right 0 top 100px url("../assets/desktop/image-host.jpg"),
                 #111725;
-    color:blanchedalmond;
+    color:antiquewhite;
 
     min-height: 130vh;
 }
@@ -12,6 +12,11 @@ h1{
     font-family: 'Andika New Basic', sans-serif;
     font-weight: 400;
     line-height: 120%;
+
+    color: #54e6af;
+}
+span{
+    color:antiquewhite;
 }
 p{
     width: 75%;
@@ -58,10 +63,11 @@ p{
     background-color: #2c344b;
     border-width: 0;
     border-style: none;
+    outline: none;
 
     width: 60%;
 
-    color: blanchedalmond;
+    color: antiquewhite;
     font-weight: 700;
 }
 
@@ -75,8 +81,12 @@ p{
     border-radius: 1.5em;
     border-width: 0;
     border-style: none;
+    outline: none;
 
     font-weight: 700;
+}
+.c-form__button:hover{
+    background-color: #9df8ec;
 }
 .podcasts{
     display: flex;
