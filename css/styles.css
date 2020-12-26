@@ -62,17 +62,21 @@ p{
     width: 60%;
 
     color: blanchedalmond;
+    font-weight: 700;
 }
 
 .c-form__button {
     color: #111725;
     padding: 0 1.5em;
+    margin: 0.2em 0.2em 0.2em 0;
     height: 3em;
     background-color: #54e6af;
 
     border-radius: 1.5em;
     border-width: 0;
     border-style: none;
+
+    font-weight: 700;
 }
 .podcasts{
     display: flex;
