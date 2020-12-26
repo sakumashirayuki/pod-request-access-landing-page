@@ -1,31 +1,38 @@
 /************************************Tag Selection**************************************/
-body{
-    background: no-repeat right 0 top 688px url("../assets/desktop/bg-pattern-dots.svg"),
-                no-repeat right 0 top 100px url("../assets/desktop/image-host.jpg"),
-                #111725;
-    color:antiquewhite;
+h1 {
+  font-size: 2.5em;
+  font-family: "Andika New Basic", sans-serif;
+  font-weight: 400;
+  line-height: 120%;
 
-    min-height: 130vh;
+  color: #54e6af;
 }
-h1{
-    font-size: 2.5em;
-    font-family: 'Andika New Basic', sans-serif;
-    font-weight: 400;
-    line-height: 120%;
-
-    color: #54e6af;
+span {
+  color: antiquewhite;
 }
-span{
-    color:antiquewhite;
+p {
+  width: 75%;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  line-height: 150%;
 }
-p{
-    width: 75%;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    line-height: 150%;
+/***********************************Id Selection*************************************/
+#email {
+  background-color: #2c344b;
 }
 /***********************************Class Selection*************************************/
-.main-container{
+/*for desktop*/
+@media (min-width: 1025px) {
+  body {
+    background: no-repeat right 0 top 688px
+        url("../assets/desktop/bg-pattern-dots.svg"),
+      no-repeat right 0 top 100px url("../assets/desktop/image-host.jpg"),
+      #111725;
+    color: antiquewhite;
+
+    min-height: 130vh;
+  }
+  .main-container {
     margin-top: 70px;
     margin-left: 6%;
 
@@ -36,21 +43,21 @@ p{
 
     height: 670px;
     width: 50%;
-}
-.content-container{
+  }
+  .content-container {
     background-color: #111725;
 
     padding-top: 80px;
     padding-right: 70px;
-}
-.email-input{
+  }
+  .email-input {
     margin-top: 32px;
     margin-bottom: 48px;
-}
-.c-form {
+  }
+  .c-form {
     box-sizing: border-box;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 
     background-color: #2c344b;
     border-radius: 1.5em;
@@ -58,8 +65,8 @@ p{
     padding-left: 1.5em;
 
     width: 75%;
-}
-.c-form__input {
+  }
+  .c-form__input {
     background-color: #2c344b;
     border-width: 0;
     border-style: none;
@@ -69,9 +76,9 @@ p{
 
     color: antiquewhite;
     font-weight: 700;
-}
+  }
 
-.c-form__button {
+  .c-form__button {
     color: #111725;
     padding: 0 1.5em;
     margin: 0.2em 0.2em 0.2em 0;
@@ -84,18 +91,133 @@ p{
     outline: none;
 
     font-weight: 700;
-}
-.c-form__button:hover{
+  }
+  .c-form__button:hover {
     background-color: #9df8ec;
-}
-.podcasts{
+  }
+  .podcasts {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     width: 90%;
+  }
 }
-/***********************************Id Selection*************************************/
-#email{
+@media (max-width: 480px) {
+  body {
+    position: absolute;
+    background-color: #111725;
+    background-image: none;
+
+    color: antiquewhite;
+
+    width: 100vw;
+
+    text-align: center;
+  }
+  body::before {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    content: url("../assets/mobile/image-host.jpg");
+    opacity: 0.2;
+  }
+  p{
+      margin: 18px auto;
+  }
+  .main-container {
+    margin: 15% auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 714.365px;
+    width: 85%;
+  }
+  .content-container {
+  }
+}
+/*for tablet*/
+@media (max-width: 1024px) and (min-width: 481px) {
+  body {
+    background: no-repeat right 0 top 0 url("../assets/tablet/image-host.jpg"),
+      #111725;
+    color: antiquewhite;
+
+    min-height: 100vh;
+  }
+  .main-container {
+    margin-top: 7%;
+    margin-left: 5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    height: 714.365px;
+    width: 85%;
+  }
+  .content-container {
+    background-color: #111725;
+
+    padding-top: 80px;
+    padding-right: 70px;
+  }
+  .email-input {
+    margin-top: 32px;
+    margin-bottom: 48px;
+  }
+  .c-form {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
     background-color: #2c344b;
+    border-radius: 1.5em;
+
+    padding-left: 1.5em;
+
+    width: 75%;
+  }
+  .c-form__input {
+    background-color: #2c344b;
+    border-width: 0;
+    border-style: none;
+    outline: none;
+
+    width: 60%;
+
+    color: antiquewhite;
+    font-weight: 700;
+  }
+
+  .c-form__button {
+    color: #111725;
+    padding: 0 1.5em;
+    margin: 0.2em 0.2em 0.2em 0;
+    height: 3em;
+    background-color: #54e6af;
+
+    border-radius: 1.5em;
+    border-width: 0;
+    border-style: none;
+    outline: none;
+
+    font-weight: 700;
+  }
+  .c-form__button:hover {
+    background-color: #9df8ec;
+  }
+  .podcasts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+  }
 }
