@@ -124,8 +124,19 @@ p {
     content: url("../assets/mobile/image-host.jpg");
     opacity: 0.2;
   }
+  .logo-container img{
+    transform: scale(0.75, 0.75);
+  }
+  .podcasts img{
+    transform: scale(0.5, 0.5);
+  }
+  h1{
+    font-size: 2em;
+  }
   p{
-      margin: 18px auto;
+    font-size: 16px;
+    margin: 18px auto;
+    width: 90%;
   }
   .main-container {
     margin: 15% auto;
@@ -135,16 +146,81 @@ p {
     justify-content: space-between;
     align-items: center;
 
-    height: 714.365px;
-    width: 85%;
+    height: 600px;
+    width: 100%;
   }
   .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+  }
+  .email-input {
+    margin-top: 32px;
+    margin-bottom: 48px;
+    
+    width: 90%;
+
+    order: 1;
+  }
+  .podcasts {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    padding: 10px;
+  }
+  .c-form {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 100px;
+  }
+  .c-form__input {
+    box-sizing: border-box;
+    background-color: #2c344b;
+    border-radius: 1.5em;
+    border-width: 0;
+    border-style: none;
+    outline: none;
+
+    height: 3em;
+    width: 100%;
+
+    color: antiquewhite;
+    font-weight: 700;
+    padding-left: 1.5em;
+  }
+
+  .c-form__button {
+    color: #111725;
+    padding: 0 1.5em;
+    margin: 0.2em 0.2em 0.2em 0;
+    height: 3em;
+    width: 100%;
+    background-color: #54e6af;
+
+    border-radius: 1.5em;
+    border-width: 0;
+    border-style: none;
+    outline: none;
+
+    font-weight: 700;
+  }
+  .c-form__button:hover {
+    background-color: #9df8ec;
   }
 }
 /*for tablet*/
 @media (max-width: 1024px) and (min-width: 481px) {
   body {
-    background: no-repeat right 0 top 0 url("../assets/tablet/image-host.jpg"),
+    position: absolute;
+    background: no-repeat top 0 right 0 url("../assets/tablet/image-host.jpg"),
       #111725;
     color: antiquewhite;
 
